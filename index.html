@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase realtime database CRUD example</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='header'>
+            <img src="https://scontent.feoh3-1.fna.fbcdn.net/v/t1.0-9/12011134_1619936774940105_288814992837489768_n.jpg?_nc_cat=0&oh=8f94433ea30f032139f27697e44153fb&oe=5B5B00F7" alt="">
+            <h1>Crud team GOOGLE</h1>
+            <h4>Testeando OpenShift</h4>
+        </div>
+
+        <h4> Crear y Modificar </h4>
+        <form id='reviewForm'>
+            <input type="hidden" id='hiddenId' />
+            <input type="text" id='fullName' />
+            <br/>
+            <textarea id='message'></textarea>
+            <br/>
+            <button type='submit'>añadir y actualizar revisión </button>
+        </form>
+        <br/>
+        <h4> Leer y eliminar </h4>
+        <ul id='reviews'></ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="main.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</body>
+
+</html>
